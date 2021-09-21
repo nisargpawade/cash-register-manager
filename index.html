@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
     <title>Cash Register</title>
     <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
     <div class="container">
         <h1>Cash Register Manager</h1>
+        <!-- <div class="hero">
+            <img src="hero.svg">
+        </div> -->
     <p id="description">Enter the Bill Amount and the Cash given by the customer and know minimum number of notes to return.</p>
-    <label>Bill Amount:</label>
+    <label><b>Bill Amount:</b></label>
     <input id="bill-amount" type="number" placeholder="Enter the Bill Value"></input>
 
     <button id="next-btn">Next</button>
@@ -20,7 +26,7 @@
 
     <div id="next-container">
         
-    <label>Cash Given:</label>
+    <label><b>Cash Given :</b></label>
     <input id="cash-given" type="number" placeholder="Enter the Cash given by customer"></input>
 
     <button id="check-btn">Check</button>
@@ -28,9 +34,9 @@
     <p id="error-message2"></p>
 
     <table>
-        <caption>Return Change:</caption>
+        <caption id="return-tag"><b>Return Change:</b></caption>
     <tr>
-        <th>No. of Notes</th>
+        <th id="no-of-notes">No. of Notes</th>
         <td class="no-of-notes"></td>
         <td class="no-of-notes"></td>
         <td class="no-of-notes"></td>

@@ -16,8 +16,8 @@ function calculateChange(amtToReturn) {
         console.log(noOfChange)
         console.log(remainingChange)
         amtToReturn = remainingChange
-        if (noOfChange == 0){ noOfNotes[i].innerText = " ";
-            // noOfNotes[i].style.display = "none"
+        if (noOfChange == 0){ 
+            noOfNotes[i].innerText = " ";
         }
         else {
             noOfNotes[i].style.display = "in-line";
