@@ -13,8 +13,6 @@ function calculateChange(amtToReturn) {
     for (let i=0; i< notes.length; i++) {
         const noOfChange = Math.trunc(amtToReturn/notes[i])
         const remainingChange = amtToReturn%notes[i]
-        console.log(noOfChange)
-        console.log(remainingChange)
         amtToReturn = remainingChange
         if (noOfChange == 0){ 
             noOfNotes[i].innerText = " ";
@@ -48,7 +46,6 @@ checkBtn.addEventListener("click", function validateAmt() {
         if (Number(cashGiven.value) >= Number(billAmount.value)) {
             hideMsg();
             const amtToReturn = cashGiven.value - billAmount.value;
-            console.log(amtToReturn)
             calculateChange(amtToReturn)
         } else {
             showMsg("Cash given is less than the Bill Amount")};
