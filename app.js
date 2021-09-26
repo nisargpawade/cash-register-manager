@@ -14,7 +14,7 @@ function calculateChange(amtToReturn) {
         const noOfChange = Math.trunc(amtToReturn/notes[i])
         const remainingChange = amtToReturn%notes[i]
         amtToReturn = remainingChange
-        if (noOfChange == 0){ 
+        if (noOfChange === 0){ 
             noOfNotes[i].innerText = " ";
         }
         else {
